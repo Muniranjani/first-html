@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <script>
+        function call()
+        {
+         
+            var x=document.getElementById("num").value;
+            var x=document.getElementById("num").value=++x;
+           if(x%3==0)
+           document.getElementById("col").style.backgroundColor="blue";
+       else if(x%2==0)
+        document.getElementById("col").style.backgroundColor="red";
+    else
+    document.getElementById("col").style.backgroundColor="black";
+      
+        }
+    </script>
+</head>
+<body id="col">
+
+   
+    <input type="button" value="0" onclick="call()" id="num">
+    <br>
+   
+    </form>
+</body>
+</html>

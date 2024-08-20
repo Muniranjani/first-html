@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call()
+        {
+            var x=document.getElementById("age").value;
+            if(x<=0 || x>100){
+                alert("invalid");
+            }else{
+            if(x<=12)
+           alert("You are Under the Kids");
+        else if(x<=19)
+        alert("You are Under the Teenage");
+    else if(x<=59)
+        alert("You are Under the Adult");
+    else
+    alert("You are Under the Senior citizen");
+            }
+}
+
+    </script>
+</head>
+<body>
+   Enter the Age:  <input type="number" placeholder="Age" id="age" >
+   <input type="button" value="Submit" onclick="call()">
+  
+    
+</body>
+</html>
