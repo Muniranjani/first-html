@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script>
+        function calculate(){
+            var birthDate=new Date(document.getElementById("date").value)
+            var currentyear=new Date();
+            var age=currentyear.getFullYear() - birthDate.getFullYear();
+            if(currentyear.getFullYear()===birthDate.getFullYear()){
+                console.log("please enter the valide DOB")
+            }else{
+            console.log("Your age is ",age);
+            
+
+        }}
+    </script>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    Enter your age:<input id="date" type="date" placeholder="Age">
+    <button onclick="calculate()">Calculate Age</button>
+</body>
+</html>
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age</title>
+    <script>
+     
+       
+        var birthDate=new Date(prompt("Enter your DOB (YYYY-MM-DD)"));
+        var currentyear=new Date().getFullYear();
+        var age=currentyear-birthDate.getFullYear();
+        console.log("Your Age is",age);
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>

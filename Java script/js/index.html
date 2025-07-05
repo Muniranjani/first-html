@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call() {
+            alert("Are you sure you want to exit?");
+            window.close(); // Close the window after the alert is confirmed
+        }
+    </script>
+</head>
+<body>
+    <button id="close" onclick="call()">Close</button>
+</body>
+</html> --> 
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script>
+        function calculate() {
+            var birthDate = new Date(document.getElementById("age").value); // Get birth date input
+            var today = new Date(); // Get current date
+
+            if (isNaN(birthDate.getTime())) {
+                document.getElementById("Result").innerHTML = "Please enter a valid date.";
+                return;
+            }
+
+            var age = today.getFullYear() - birthDate.getFullYear(); // Calculate the year difference
+            var month = today.getMonth() - birthDate.getMonth();
+            var day = today.getDate() - birthDate.getDate();
+
+            // Adjust if the birth date hasn't occurred yet this year
+            // if (month < 0 || (month === 0 && day < 0)) {
+            //     age--;
+            // }
+            // document.getElementById("Result").innerHTML = "You are " + age + " years old.";
+            console.log("Your Age is ",age);
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    Enter your Date of Birth: <input type="date" id="age">
+    
+    <button onclick="calculate()" id="cal">Calculate Age</button>
+    <p id="Result"></p>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script>
+        function calculate(){
+            var birthDate=document.getElementById("date").value;
+            var currentyear=new Date();
+            age=currentyear.value-birthDate.value;
+            console.log(age);
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    Enter your age:<input id="date" type="date" placeholder="Age">
+    <button onclick="calculate()">Calculate Age</button>
+</body>
+</html>
+

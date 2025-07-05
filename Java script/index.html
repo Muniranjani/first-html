@@ -1,0 +1,143 @@
+<!-- <p id="text">Ranjani</p>
+<script>
+var para=document.getElementById("text")
+console.log(para.textContent)
+para.textContent="Hello"
+</script> -->
+
+<!-- <h1 id="title">Hello world</h1>
+<script>
+    var text=document.getElementById("title")
+    console.log(text.textContent)
+    text.textContent=("Bye world")
+</script>` -->
+
+<!-- <input id="t1" >
+<input  id="t2" >
+<button onclick="call()"> Add</button>
+<p id="result">Result:</p>
+
+
+<script>
+    var num1=document.getElementById("t1")
+    var num2=document.getElementById("t2")
+    var result=document.getElementById("result")
+
+    // var num1.value= Number(num1)
+    // var num2.value= Number(num2)
+
+    // var total=num1.value+num2.value
+
+    function call(){
+        // console.log(total)
+        var num1value= Number(num1.value)
+    var num2value= Number(num2.value)
+
+    var total=num1value+num2value
+        result.textContent=total
+    }
+</script> -->
+
+<!-- <div id="box"></div>
+<button onclick="call()">change color</button>
+
+<style>
+    div{
+        background-color: bisque;
+        height: 100px;
+        width: 100px;
+        transition: 2s;
+
+    }
+    button{
+        margin-top: 10px;
+    }
+    .widthmin{
+        width: 500px;
+    }
+</style>
+<script>
+    var box=document.getElementById("box");
+    function call()
+    {
+        box.setAttribute('class',"widthmin")
+        box.style.backgroundColor="blue";
+    }
+</script> -->
+
+<!-- <input type="text" id="text" onkeyup="call()">
+<button onclick="call()">print</button>
+<h1 id="par"></h1>
+
+<script>
+var content=document.getElementById("text")
+var par=document.getElementById("par")
+
+function call(){
+   par.textContent=content.value;
+    
+}
+
+
+</script> -->
+
+<!-- <button onclick="call()">Add</button>
+<div id="text"></div>
+
+<script>
+    var text=document.getElementById("text")
+    function call()
+    {
+       var list=document.createElement("h1");
+       list.textContent="hello";
+       text.append(list);
+    }
+</script> -->
+
+
+<!-- <button id="btn" onclick="call()">change color</button>
+<script>
+    var button=document.getElementById("btn")
+    function call(){
+        button.style.backgroundColor="red"
+    }
+</script> -->
+
+<!-- <h1 id="text"> Name</h1>
+<button  onclick="n1(event)">Ranjani</button>
+<button  onclick="n1(event)">Ragul</button>
+<button  onclick="n1(event)">Ramesh</button>
+
+<script>
+    var text=document.getElementById("text")
+    
+
+    function n1(event){
+        text.textContent=event.target.textContent
+    }
+    
+</script> -->
+
+<h1 id="one" onclick="call(event)">One</h1>
+<h1 id="two" onclick="call(event)">two</h1>
+
+<h1 id="three" onclick="call(event)">three</h1>
+
+<h1 id="four" onclick="call(event)">four</h1>
+
+<h1 id="five" onclick="call(event)">five</h1>
+<h1 id="six" onclick="call(event)">six</h1>
+
+<h1 id="seven" onclick="call(event)">seven</h1>
+<h1 id="eight" onclick="call(event)">eight</h1>
+
+
+
+
+<script>
+    
+    function call(event)
+    {
+        event.target.remove()
+    }
+</script>

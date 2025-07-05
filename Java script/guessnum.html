@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var randomNumber = Math.floor(Math.random() * 10) + 1;
+        var totalscore = 3;
+
+        function check() {
+            var guessnumber = document.getElementById("guessnumber");
+            var result = document.getElementById("result");
+            var score = document.getElementById("score");
+            var enterednum = parseInt(guessnumber.value);
+            
+            if (randomNumber === enterednum) {
+                result.textContent = "Right";
+                alert("You win!");
+            } else {
+                totalscore--;
+                score.textContent = "Score: " + totalscore;
+                result.textContent = "Wrong";
+                
+                if (totalscore === 0) {
+                    alert("Game Over! You've run out of attempts.");
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-image: url(images.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: red;
+            font-size: 40px;
+        }
+        #guessnumber {
+            height: 30px;
+            width: 250px;
+        }
+        #guessnumber, #check {
+            margin-bottom: 20px;
+            border: 5px solid rgb(219, 190, 21);
+        }
+        p {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Guess the number from 1 to 10</h1>
+<center>
+    <input id="guessnumber" type="number" placeholder=" Enter the Number"><br>
+    <button onclick="check()" id="check">Check</button>
+</center>
+<p id="result">You are Wrong/Right</p>
+<p id="score">Score: 3</p>
+
+</body>
+</html>

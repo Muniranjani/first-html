@@ -1,0 +1,45 @@
+<!-- <h1 class="ok">one</h1>
+<h1 class="ok">two</h1>
+<h1 class="ok">three</h1>
+<h1 class="ok">four</h1>
+
+<script>
+    var div=document.querySelectorAll(".ok")
+    for(count=0;count<div.length;count=count+1)
+{
+    console.log(div[count].textContent);
+    
+}
+</script> -->
+
+<!-- <div>
+    <h1>Ranjani</h1>
+
+    <h1>Gobika</h1>
+</div>
+<script>
+    var div=document.querySelector("div")
+    var h1=document.createElement("h1")
+    h1.textContent="hello"
+    div.insertAdjacentElement("beforeend",h1)
+</script> -->
+
+<input id="input">
+<button onclick="add()">add</button>
+<ul id="list-container">
+    <li>Hello
+        <button >Delete</button>
+    </li>
+  
+</ul>
+<script>
+    var ul=document.getElementById("list-container")
+    var input=document.getElementById("input")
+        function add(){
+            var listitem=document.getElementById("li")
+            listitem.textContent=input.value
+            ul.append(listitem)
+
+        }
+    
+</script>

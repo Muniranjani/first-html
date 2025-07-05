@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="net-icon2.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"><img src="logo4.png" alt="Netflix Logo" width="100" height="100"></a>
+    </nav>
+    <div class="sign-in">
+        <div class="login-form">
+            <h1 class="heading">Sign In</h1>
+            <form id="loginForm">
+                <div class="input-container">
+                    <input type="text" id="email" placeholder="Email or mobile number" required>
+                    <p id="emailError" class="error-message">Please enter a valid email address or phone number.</p>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <p id="passwordError" class="error-message">Your password must contain between 4 and 60 characters.</p>
+                </div>
+                <div class="input-sign">
+                    <button type="button" onclick="validateForm()">Sign In</button>
+                </div>
+                <div class="forget-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox"> Remember me
+                </div>
+                <div class="sign-up">
+                    <p>New to Netflix? <a href="#">Sign up Now</a></p>
+                </div>
+                <div class="learn-more">
+                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
